@@ -1,0 +1,21 @@
+
+
+<ul>
+
+    <li *ngFor="let item of items | async">
+      {{item.title}}
+      {{item|json}}
+  </ul>
+
+<button (click)="addItem()">Add Item</button>
+<button (click)="getDataByKey()">Show Item</button>
+<button (click)="updateItem()">Update Item</button>
+<button (click)="deleteEverything()">Delete All</button>
+
+
+
+<!-- https://github.com/angular/angularfire2/blob/master/docs/rtdb/lists.md
+https://angularfirebase.com/snippets/query-firebase-data-with-the-angular-router/#post-object-ts
+https://angularfirebase.
+com/snippets/angularfire-migration-from-v4-to-v5-guide/
+https://angularfirebase.com/lessons/reactive-crud-app-with-angular-and-firebase-tutorial/ -->
